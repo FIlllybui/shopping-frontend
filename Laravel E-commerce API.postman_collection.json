@@ -1,0 +1,249 @@
+{
+	"info": {
+		"_postman_id": "e729c7ed-8edb-4bac-86a6-fa1d8c880736",
+		"name": "Laravel E-commerce API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38352839"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "Get All Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/products",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"products"
+							]
+						},
+						"description": "Retrieve all products"
+					},
+					"response": [
+						{
+							"name": "Get All Products",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/products",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"products"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 15 Sep 2024 08:41:46 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Smartphones\",\n        \"description\": \"Latest model with high-resolution display, powerful processor, and advanced camera system.\",\n        \"price\": \"516.04\",\n        \"stock\": 86,\n        \"category_id\": 1,\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"image_url\": \"https://via.placeholder.com/640x480.png/0099ee?text=Smartphones+voluptatibus\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Laptops\",\n        \"description\": \"Lightweight and powerful laptop with long battery life, perfect for work and entertainment.\",\n        \"price\": \"624.22\",\n        \"stock\": 3,\n        \"category_id\": 1,\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"image_url\": \"https://via.placeholder.com/640x480.png/0077ee?text=Laptops+dolor\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Tablets\",\n        \"description\": \"Versatile tablet with a large touchscreen, ideal for reading, browsing, and light productivity.\",\n        \"price\": \"454.27\",\n        \"stock\": 29,\n        \"category_id\": 1,\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"image_url\": \"https://via.placeholder.com/640x480.png/00ee22?text=Tablets+dicta\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"Smartwatches\",\n        \"description\": \"Feature-packed smartwatch with fitness tracking, notifications, and customizable watch faces.\",\n        \"price\": \"311.45\",\n        \"stock\": 56,\n        \"category_id\": 1,\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"image_url\": \"https://via.placeholder.com/640x480.png/005577?text=Smartwatches+quisquam\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Headphones\",\n        \"description\": \"Noise-cancelling wireless headphones with premium sound quality and comfortable design.\",\n        \"price\": \"520.93\",\n        \"stock\": 61,\n        \"category_id\": 1,\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"image_url\": \"https://via.placeholder.com/640x480.png/00ee44?text=Headphones+nesciunt\"\n    },\n    {\n        \"id\": 6,\n        \"name\": \"T-shirts\",\n        \"description\": \"Soft, breathable cotton t-shirts in various colors and sizes for everyday wear.\",\n        \"price\": \"46.25\",\n        \"stock\": 39,\n        \"category_id\": 2,\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"image_url\": \"https://via.placeholder.com/640x480.png/00ddff?text=T-shirts+suscipit\"\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Jeans\",\n        \"description\": \"Classic denim jeans with a comfortable fit and durable construction.\",\n        \"price\": \"595.14\",\n        \"stock\": 65,\n        \"category_id\": 2,\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"image_url\": \"https://via.placeholder.com/640x480.png/003311?text=Jeans+sit\"\n    },\n    {\n        \"id\": 8,\n        \"name\": \"Dresses\",\n        \"description\": \"Stylish dresses for various occasions, from casual to formal wear.\",\n        \"price\": \"849.86\",\n        \"stock\": 69,\n        \"category_id\": 2,\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"image_url\": \"https://via.placeholder.com/640x480.png/008855?text=Dresses+perspiciatis\"\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Jackets\",\n        \"description\": \"Weather-resistant jackets to keep you warm and dry in any condition.\",\n        \"price\": \"272.35\",\n        \"stock\": 9,\n        \"category_id\": 2,\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"image_url\": \"https://via.placeholder.com/640x480.png/007766?text=Jackets+eos\"\n    },\n    {\n        \"id\": 10,\n        \"name\": \"Shoes\",\n        \"description\": \"Comfortable and fashionable shoes for all-day wear and various activities.\",\n        \"price\": \"296.17\",\n        \"stock\": 6,\n        \"category_id\": 2,\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"image_url\": \"https://via.placeholder.com/640x480.png/00ccee?text=Shoes+cumque\"\n    },\n    {\n        \"id\": 11,\n        \"name\": \"Furniture\",\n        \"description\": \"Modern and functional furniture pieces to enhance your living space.\",\n        \"price\": \"847.89\",\n        \"stock\": 18,\n        \"category_id\": 3,\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"image_url\": \"https://via.placeholder.com/640x480.png/00dd99?text=Furniture+at\"\n    },\n    {\n        \"id\": 12,\n        \"name\": \"Kitchenware\",\n        \"description\": \"High-quality kitchen tools and appliances for cooking enthusiasts.\",\n        \"price\": \"856.70\",\n        \"stock\": 11,\n        \"category_id\": 3,\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"image_url\": \"https://via.placeholder.com/640x480.png/0099cc?text=Kitchenware+totam\"\n    },\n    {\n        \"id\": 13,\n        \"name\": \"Bedding\",\n        \"description\": \"Soft and cozy bedding sets for a comfortable night's sleep.\",\n        \"price\": \"678.09\",\n        \"stock\": 62,\n        \"category_id\": 3,\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"image_url\": \"https://via.placeholder.com/640x480.png/004466?text=Bedding+temporibus\"\n    },\n    {\n        \"id\": 14,\n        \"name\": \"Gardening Tools\",\n        \"description\": \"Durable gardening tools to help maintain and beautify your outdoor space.\",\n        \"price\": \"37.25\",\n        \"stock\": 0,\n        \"category_id\": 3,\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"image_url\": \"https://via.placeholder.com/640x480.png/00ffaa?text=Gardening+Tools+maiores\"\n    },\n    {\n        \"id\": 15,\n        \"name\": \"Home Decor\",\n        \"description\": \"Stylish decorative items to add personality to your home.\",\n        \"price\": \"438.54\",\n        \"stock\": 55,\n        \"category_id\": 3,\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"image_url\": \"https://via.placeholder.com/640x480.png/00aa55?text=Home+Decor+minus\"\n    },\n    {\n        \"id\": 16,\n        \"name\": \"Fiction\",\n        \"description\": \"Engaging novels across various genres, from mystery to romance and science fiction.\",\n        \"price\": \"456.27\",\n        \"stock\": 89,\n        \"category_id\": 4,\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"image_url\": \"https://via.placeholder.com/640x480.png/00aa77?text=Fiction+facere\"\n    },\n    {\n        \"id\": 17,\n        \"name\": \"Non-fiction\",\n        \"description\": \"Informative books on history, science, and current events.\",\n        \"price\": \"432.43\",\n        \"stock\": 34,\n        \"category_id\": 4,\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"image_url\": \"https://via.placeholder.com/640x480.png/00aabb?text=Non-fiction+fuga\"\n    },\n    {\n        \"id\": 18,\n        \"name\": \"Biographies\",\n        \"description\": \"Inspiring life stories of notable figures from various fields.\",\n        \"price\": \"163.05\",\n        \"stock\": 2,\n        \"category_id\": 4,\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"image_url\": \"https://via.placeholder.com/640x480.png/00ff00?text=Biographies+provident\"\n    },\n    {\n        \"id\": 19,\n        \"name\": \"Cookbooks\",\n        \"description\": \"Recipe collections and cooking guides for all skill levels and cuisines.\",\n        \"price\": \"347.64\",\n        \"stock\": 63,\n        \"category_id\": 4,\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"image_url\": \"https://via.placeholder.com/640x480.png/00ddcc?text=Cookbooks+eligendi\"\n    },\n    {\n        \"id\": 20,\n        \"name\": \"Self-help\",\n        \"description\": \"Books focused on personal growth, motivation, and life improvement.\",\n        \"price\": \"369.87\",\n        \"stock\": 71,\n        \"category_id\": 4,\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"image_url\": \"https://via.placeholder.com/640x480.png/00ffbb?text=Self-help+quidem\"\n    },\n    {\n        \"id\": 21,\n        \"name\": \"Fitness Equipment\",\n        \"description\": \"High-quality exercise gear for home workouts and strength training.\",\n        \"price\": \"756.51\",\n        \"stock\": 86,\n        \"category_id\": 5,\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"image_url\": \"https://via.placeholder.com/640x480.png/0099bb?text=Fitness+Equipment+et\"\n    },\n    {\n        \"id\": 22,\n        \"name\": \"Camping Gear\",\n        \"description\": \"Essential equipment for comfortable and safe outdoor adventures.\",\n        \"price\": \"239.99\",\n        \"stock\": 37,\n        \"category_id\": 5,\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"image_url\": \"https://via.placeholder.com/640x480.png/00ee22?text=Camping+Gear+voluptates\"\n    },\n    {\n        \"id\": 23,\n        \"name\": \"Bicycles\",\n        \"description\": \"Durable and efficient bicycles for commuting, exercise, or leisure riding.\",\n        \"price\": \"469.62\",\n        \"stock\": 80,\n        \"category_id\": 5,\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"image_url\": \"https://via.placeholder.com/640x480.png/00eecc?text=Bicycles+est\"\n    },\n    {\n        \"id\": 24,\n        \"name\": \"Sports Apparel\",\n        \"description\": \"Performance clothing for various sports and outdoor activities.\",\n        \"price\": \"34.16\",\n        \"stock\": 38,\n        \"category_id\": 5,\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"image_url\": \"https://via.placeholder.com/640x480.png/000000?text=Sports+Apparel+eos\"\n    },\n    {\n        \"id\": 25,\n        \"name\": \"Outdoor Games\",\n        \"description\": \"Fun and engaging games for backyard entertainment and family gatherings.\",\n        \"price\": \"722.02\",\n        \"stock\": 13,\n        \"category_id\": 5,\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"image_url\": \"https://via.placeholder.com/640x480.png/00bbbb?text=Outdoor+Games+consectetur\"\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Orders",
+			"item": [
+				{
+					"name": "Create Order",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"products\": [\n    {\n      \"id\": 1,\n      \"quantity\": 2\n    },\n    {\n      \"id\": 2,\n      \"quantity\": 1\n    }\n  ]\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/orders",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"orders"
+							]
+						},
+						"description": "Create a new order"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Order History",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/orders/history",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"orders",
+								"history"
+							]
+						},
+						"description": "Retrieve order history"
+					},
+					"response": [
+						{
+							"name": "Get Order History",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{base_url}}/api/orders/history",
+									"host": [
+										"{{base_url}}"
+									],
+									"path": [
+										"api",
+										"orders",
+										"history"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 15 Sep 2024 08:40:10 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 11,\n        \"status\": \"pending\",\n        \"total_price\": \"52.00\",\n        \"created_at\": \"2024-09-15T07:09:07.000000Z\",\n        \"updated_at\": \"2024-09-15T07:09:07.000000Z\",\n        \"products\": []\n    },\n    {\n        \"id\": 1,\n        \"status\": \"pending\",\n        \"total_price\": \"5055.95\",\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"products\": [\n            {\n                \"id\": 10,\n                \"name\": \"Shoes\",\n                \"description\": \"Comfortable and fashionable shoes for all-day wear and various activities.\",\n                \"price\": \"296.17\",\n                \"stock\": 6,\n                \"category_id\": 2,\n                \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"image_url\": \"https://via.placeholder.com/640x480.png/00ccee?text=Shoes+cumque\",\n                \"pivot\": {\n                    \"order_id\": 1,\n                    \"product_id\": 10,\n                    \"quantity\": 3,\n                    \"price\": \"296.17\"\n                }\n            },\n            {\n                \"id\": 5,\n                \"name\": \"Headphones\",\n                \"description\": \"Noise-cancelling wireless headphones with premium sound quality and comfortable design.\",\n                \"price\": \"520.93\",\n                \"stock\": 61,\n                \"category_id\": 1,\n                \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"image_url\": \"https://via.placeholder.com/640x480.png/00ee44?text=Headphones+nesciunt\",\n                \"pivot\": {\n                    \"order_id\": 1,\n                    \"product_id\": 5,\n                    \"quantity\": 3,\n                    \"price\": \"520.93\"\n                }\n            },\n            {\n                \"id\": 5,\n                \"name\": \"Headphones\",\n                \"description\": \"Noise-cancelling wireless headphones with premium sound quality and comfortable design.\",\n                \"price\": \"520.93\",\n                \"stock\": 61,\n                \"category_id\": 1,\n                \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"image_url\": \"https://via.placeholder.com/640x480.png/00ee44?text=Headphones+nesciunt\",\n                \"pivot\": {\n                    \"order_id\": 1,\n                    \"product_id\": 5,\n                    \"quantity\": 5,\n                    \"price\": \"520.93\"\n                }\n            }\n        ]\n    },\n    {\n        \"id\": 2,\n        \"status\": \"pending\",\n        \"total_price\": \"1515.89\",\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"products\": [\n            {\n                \"id\": 20,\n                \"name\": \"Self-help\",\n                \"description\": \"Books focused on personal growth, motivation, and life improvement.\",\n                \"price\": \"369.87\",\n                \"stock\": 71,\n                \"category_id\": 4,\n                \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"image_url\": \"https://via.placeholder.com/640x480.png/00ffbb?text=Self-help+quidem\",\n                \"pivot\": {\n                    \"order_id\": 2,\n                    \"product_id\": 20,\n                    \"quantity\": 2,\n                    \"price\": \"369.87\"\n                }\n            },\n            {\n                \"id\": 10,\n                \"name\": \"Shoes\",\n                \"description\": \"Comfortable and fashionable shoes for all-day wear and various activities.\",\n                \"price\": \"296.17\",\n                \"stock\": 6,\n                \"category_id\": 2,\n                \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"image_url\": \"https://via.placeholder.com/640x480.png/00ccee?text=Shoes+cumque\",\n                \"pivot\": {\n                    \"order_id\": 2,\n                    \"product_id\": 10,\n                    \"quantity\": 1,\n                    \"price\": \"296.17\"\n                }\n            },\n            {\n                \"id\": 22,\n                \"name\": \"Camping Gear\",\n                \"description\": \"Essential equipment for comfortable and safe outdoor adventures.\",\n                \"price\": \"239.99\",\n                \"stock\": 37,\n                \"category_id\": 5,\n                \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"image_url\": \"https://via.placeholder.com/640x480.png/00ee22?text=Camping+Gear+voluptates\",\n                \"pivot\": {\n                    \"order_id\": 2,\n                    \"product_id\": 22,\n                    \"quantity\": 2,\n                    \"price\": \"239.99\"\n                }\n            }\n        ]\n    },\n    {\n        \"id\": 3,\n        \"status\": \"pending\",\n        \"total_price\": \"4734.00\",\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"products\": [\n            {\n                \"id\": 20,\n                \"name\": \"Self-help\",\n                \"description\": \"Books focused on personal growth, motivation, and life improvement.\",\n                \"price\": \"369.87\",\n                \"stock\": 71,\n                \"category_id\": 4,\n                \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"image_url\": \"https://via.placeholder.com/640x480.png/00ffbb?text=Self-help+quidem\",\n                \"pivot\": {\n                    \"order_id\": 3,\n                    \"product_id\": 20,\n                    \"quantity\": 2,\n                    \"price\": \"369.87\"\n                }\n            },\n            {\n                \"id\": 9,\n                \"name\": \"Jackets\",\n                \"description\": \"Weather-resistant jackets to keep you warm and dry in any condition.\",\n                \"price\": \"272.35\",\n                \"stock\": 9,\n                \"category_id\": 2,\n                \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"image_url\": \"https://via.placeholder.com/640x480.png/007766?text=Jackets+eos\",\n                \"pivot\": {\n                    \"order_id\": 3,\n                    \"product_id\": 9,\n                    \"quantity\": 5,\n                    \"price\": \"272.35\"\n                }\n            },\n            {\n                \"id\": 17,\n                \"name\": \"Non-fiction\",\n                \"description\": \"Informative books on history, science, and current events.\",\n                \"price\": \"432.43\",\n                \"stock\": 34,\n                \"category_id\": 4,\n                \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"image_url\": \"https://via.placeholder.com/640x480.png/00aabb?text=Non-fiction+fuga\",\n                \"pivot\": {\n                    \"order_id\": 3,\n                    \"product_id\": 17,\n                    \"quantity\": 4,\n                    \"price\": \"432.43\"\n                }\n            },\n            {\n                \"id\": 18,\n                \"name\": \"Biographies\",\n                \"description\": \"Inspiring life stories of notable figures from various fields.\",\n                \"price\": \"163.05\",\n                \"stock\": 2,\n                \"category_id\": 4,\n                \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"image_url\": \"https://via.placeholder.com/640x480.png/00ff00?text=Biographies+provident\",\n                \"pivot\": {\n                    \"order_id\": 3,\n                    \"product_id\": 18,\n                    \"quantity\": 1,\n                    \"price\": \"163.05\"\n                }\n            },\n            {\n                \"id\": 20,\n                \"name\": \"Self-help\",\n                \"description\": \"Books focused on personal growth, motivation, and life improvement.\",\n                \"price\": \"369.87\",\n                \"stock\": 71,\n                \"category_id\": 4,\n                \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"image_url\": \"https://via.placeholder.com/640x480.png/00ffbb?text=Self-help+quidem\",\n                \"pivot\": {\n                    \"order_id\": 3,\n                    \"product_id\": 20,\n                    \"quantity\": 2,\n                    \"price\": \"369.87\"\n                }\n            }\n        ]\n    },\n    {\n        \"id\": 4,\n        \"status\": \"pending\",\n        \"total_price\": \"7612.28\",\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"products\": [\n            {\n                \"id\": 12,\n                \"name\": \"Kitchenware\",\n                \"description\": \"High-quality kitchen tools and appliances for cooking enthusiasts.\",\n                \"price\": \"856.70\",\n                \"stock\": 11,\n                \"category_id\": 3,\n                \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"image_url\": \"https://via.placeholder.com/640x480.png/0099cc?text=Kitchenware+totam\",\n                \"pivot\": {\n                    \"order_id\": 4,\n                    \"product_id\": 12,\n                    \"quantity\": 3,\n                    \"price\": \"856.70\"\n                }\n            },\n            {\n                \"id\": 24,\n                \"name\": \"Sports Apparel\",\n                \"description\": \"Performance clothing for various sports and outdoor activities.\",\n                \"price\": \"34.16\",\n                \"stock\": 38,\n                \"category_id\": 5,\n                \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"image_url\": \"https://via.placeholder.com/640x480.png/000000?text=Sports+Apparel+eos\",\n                \"pivot\": {\n                    \"order_id\": 4,\n                    \"product_id\": 24,\n                    \"quantity\": 3,\n                    \"price\": \"34.16\"\n                }\n            },\n            {\n                \"id\": 23,\n                \"name\": \"Bicycles\",\n                \"description\": \"Durable and efficient bicycles for commuting, exercise, or leisure riding.\",\n                \"price\": \"469.62\",\n                \"stock\": 80,\n                \"category_id\": 5,\n                \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"image_url\": \"https://via.placeholder.com/640x480.png/00eecc?text=Bicycles+est\",\n                \"pivot\": {\n                    \"order_id\": 4,\n                    \"product_id\": 23,\n                    \"quantity\": 1,\n                    \"price\": \"469.62\"\n                }\n            },\n            {\n                \"id\": 25,\n                \"name\": \"Outdoor Games\",\n                \"description\": \"Fun and engaging games for backyard entertainment and family gatherings.\",\n                \"price\": \"722.02\",\n                \"stock\": 13,\n                \"category_id\": 5,\n                \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"image_url\": \"https://via.placeholder.com/640x480.png/00bbbb?text=Outdoor+Games+consectetur\",\n                \"pivot\": {\n                    \"order_id\": 4,\n                    \"product_id\": 25,\n                    \"quantity\": 2,\n                    \"price\": \"722.02\"\n                }\n            },\n            {\n                \"id\": 21,\n                \"name\": \"Fitness Equipment\",\n                \"description\": \"High-quality exercise gear for home workouts and strength training.\",\n                \"price\": \"756.51\",\n                \"stock\": 86,\n                \"category_id\": 5,\n                \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"image_url\": \"https://via.placeholder.com/640x480.png/0099bb?text=Fitness+Equipment+et\",\n                \"pivot\": {\n                    \"order_id\": 4,\n                    \"product_id\": 21,\n                    \"quantity\": 4,\n                    \"price\": \"756.51\"\n                }\n            }\n        ]\n    },\n    {\n        \"id\": 5,\n        \"status\": \"pending\",\n        \"total_price\": \"1665.11\",\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"products\": [\n            {\n                \"id\": 18,\n                \"name\": \"Biographies\",\n                \"description\": \"Inspiring life stories of notable figures from various fields.\",\n                \"price\": \"163.05\",\n                \"stock\": 2,\n                \"category_id\": 4,\n                \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"image_url\": \"https://via.placeholder.com/640x480.png/00ff00?text=Biographies+provident\",\n                \"pivot\": {\n                    \"order_id\": 5,\n                    \"product_id\": 18,\n                    \"quantity\": 5,\n                    \"price\": \"163.05\"\n                }\n            },\n            {\n                \"id\": 8,\n                \"name\": \"Dresses\",\n                \"description\": \"Stylish dresses for various occasions, from casual to formal wear.\",\n                \"price\": \"849.86\",\n                \"stock\": 69,\n                \"category_id\": 2,\n                \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"image_url\": \"https://via.placeholder.com/640x480.png/008855?text=Dresses+perspiciatis\",\n                \"pivot\": {\n                    \"order_id\": 5,\n                    \"product_id\": 8,\n                    \"quantity\": 1,\n                    \"price\": \"849.86\"\n                }\n            }\n        ]\n    },\n    {\n        \"id\": 6,\n        \"status\": \"pending\",\n        \"total_price\": \"1701.26\",\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"products\": [\n            {\n                \"id\": 14,\n                \"name\": \"Gardening Tools\",\n                \"description\": \"Durable gardening tools to help maintain and beautify your outdoor space.\",\n                \"price\": \"37.25\",\n                \"stock\": 0,\n                \"category_id\": 3,\n                \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"image_url\": \"https://via.placeholder.com/640x480.png/00ffaa?text=Gardening+Tools+maiores\",\n                \"pivot\": {\n                    \"order_id\": 6,\n                    \"product_id\": 14,\n                    \"quantity\": 5,\n                    \"price\": \"37.25\"\n                }\n            },\n            {\n                \"id\": 24,\n                \"name\": \"Sports Apparel\",\n                \"description\": \"Performance clothing for various sports and outdoor activities.\",\n                \"price\": \"34.16\",\n                \"stock\": 38,\n                \"category_id\": 5,\n                \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"image_url\": \"https://via.placeholder.com/640x480.png/000000?text=Sports+Apparel+eos\",\n                \"pivot\": {\n                    \"order_id\": 6,\n                    \"product_id\": 24,\n                    \"quantity\": 1,\n                    \"price\": \"34.16\"\n                }\n            },\n            {\n                \"id\": 10,\n                \"name\": \"Shoes\",\n                \"description\": \"Comfortable and fashionable shoes for all-day wear and various activities.\",\n                \"price\": \"296.17\",\n                \"stock\": 6,\n                \"category_id\": 2,\n                \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"image_url\": \"https://via.placeholder.com/640x480.png/00ccee?text=Shoes+cumque\",\n                \"pivot\": {\n                    \"order_id\": 6,\n                    \"product_id\": 10,\n                    \"quantity\": 5,\n                    \"price\": \"296.17\"\n                }\n            }\n        ]\n    },\n    {\n        \"id\": 7,\n        \"status\": \"pending\",\n        \"total_price\": \"3642.08\",\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"products\": [\n            {\n                \"id\": 4,\n                \"name\": \"Smartwatches\",\n                \"description\": \"Feature-packed smartwatch with fitness tracking, notifications, and customizable watch faces.\",\n                \"price\": \"311.45\",\n                \"stock\": 56,\n                \"category_id\": 1,\n                \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"image_url\": \"https://via.placeholder.com/640x480.png/005577?text=Smartwatches+quisquam\",\n                \"pivot\": {\n                    \"order_id\": 7,\n                    \"product_id\": 4,\n                    \"quantity\": 5,\n                    \"price\": \"311.45\"\n                }\n            },\n            {\n                \"id\": 3,\n                \"name\": \"Tablets\",\n                \"description\": \"Versatile tablet with a large touchscreen, ideal for reading, browsing, and light productivity.\",\n                \"price\": \"454.27\",\n                \"stock\": 29,\n                \"category_id\": 1,\n                \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"image_url\": \"https://via.placeholder.com/640x480.png/00ee22?text=Tablets+dicta\",\n                \"pivot\": {\n                    \"order_id\": 7,\n                    \"product_id\": 3,\n                    \"quantity\": 3,\n                    \"price\": \"454.27\"\n                }\n            },\n            {\n                \"id\": 25,\n                \"name\": \"Outdoor Games\",\n                \"description\": \"Fun and engaging games for backyard entertainment and family gatherings.\",\n                \"price\": \"722.02\",\n                \"stock\": 13,\n                \"category_id\": 5,\n                \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"image_url\": \"https://via.placeholder.com/640x480.png/00bbbb?text=Outdoor+Games+consectetur\",\n                \"pivot\": {\n                    \"order_id\": 7,\n                    \"product_id\": 25,\n                    \"quantity\": 1,\n                    \"price\": \"722.02\"\n                }\n            }\n        ]\n    },\n    {\n        \"id\": 8,\n        \"status\": \"pending\",\n        \"total_price\": \"4385.94\",\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"products\": [\n            {\n                \"id\": 24,\n                \"name\": \"Sports Apparel\",\n                \"description\": \"Performance clothing for various sports and outdoor activities.\",\n                \"price\": \"34.16\",\n                \"stock\": 38,\n                \"category_id\": 5,\n                \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"image_url\": \"https://via.placeholder.com/640x480.png/000000?text=Sports+Apparel+eos\",\n                \"pivot\": {\n                    \"order_id\": 8,\n                    \"product_id\": 24,\n                    \"quantity\": 4,\n                    \"price\": \"34.16\"\n                }\n            },\n            {\n                \"id\": 8,\n                \"name\": \"Dresses\",\n                \"description\": \"Stylish dresses for various occasions, from casual to formal wear.\",\n                \"price\": \"849.86\",\n                \"stock\": 69,\n                \"category_id\": 2,\n                \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"image_url\": \"https://via.placeholder.com/640x480.png/008855?text=Dresses+perspiciatis\",\n                \"pivot\": {\n                    \"order_id\": 8,\n                    \"product_id\": 8,\n                    \"quantity\": 5,\n                    \"price\": \"849.86\"\n                }\n            }\n        ]\n    },\n    {\n        \"id\": 9,\n        \"status\": \"pending\",\n        \"total_price\": \"2793.43\",\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"products\": [\n            {\n                \"id\": 20,\n                \"name\": \"Self-help\",\n                \"description\": \"Books focused on personal growth, motivation, and life improvement.\",\n                \"price\": \"369.87\",\n                \"stock\": 71,\n                \"category_id\": 4,\n                \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"image_url\": \"https://via.placeholder.com/640x480.png/00ffbb?text=Self-help+quidem\",\n                \"pivot\": {\n                    \"order_id\": 9,\n                    \"product_id\": 20,\n                    \"quantity\": 3,\n                    \"price\": \"369.87\"\n                }\n            },\n            {\n                \"id\": 24,\n                \"name\": \"Sports Apparel\",\n                \"description\": \"Performance clothing for various sports and outdoor activities.\",\n                \"price\": \"34.16\",\n                \"stock\": 38,\n                \"category_id\": 5,\n                \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"image_url\": \"https://via.placeholder.com/640x480.png/000000?text=Sports+Apparel+eos\",\n                \"pivot\": {\n                    \"order_id\": 9,\n                    \"product_id\": 24,\n                    \"quantity\": 5,\n                    \"price\": \"34.16\"\n                }\n            },\n            {\n                \"id\": 21,\n                \"name\": \"Fitness Equipment\",\n                \"description\": \"High-quality exercise gear for home workouts and strength training.\",\n                \"price\": \"756.51\",\n                \"stock\": 86,\n                \"category_id\": 5,\n                \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"image_url\": \"https://via.placeholder.com/640x480.png/0099bb?text=Fitness+Equipment+et\",\n                \"pivot\": {\n                    \"order_id\": 9,\n                    \"product_id\": 21,\n                    \"quantity\": 2,\n                    \"price\": \"756.51\"\n                }\n            }\n        ]\n    },\n    {\n        \"id\": 10,\n        \"status\": \"pending\",\n        \"total_price\": \"1955.15\",\n        \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n        \"updated_at\": \"2024-09-15T07:06:57.000000Z\",\n        \"products\": [\n            {\n                \"id\": 10,\n                \"name\": \"Shoes\",\n                \"description\": \"Comfortable and fashionable shoes for all-day wear and various activities.\",\n                \"price\": \"296.17\",\n                \"stock\": 6,\n                \"category_id\": 2,\n                \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"image_url\": \"https://via.placeholder.com/640x480.png/00ccee?text=Shoes+cumque\",\n                \"pivot\": {\n                    \"order_id\": 10,\n                    \"product_id\": 10,\n                    \"quantity\": 2,\n                    \"price\": \"296.17\"\n                }\n            },\n            {\n                \"id\": 3,\n                \"name\": \"Tablets\",\n                \"description\": \"Versatile tablet with a large touchscreen, ideal for reading, browsing, and light productivity.\",\n                \"price\": \"454.27\",\n                \"stock\": 29,\n                \"category_id\": 1,\n                \"created_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"updated_at\": \"2024-09-15T07:06:56.000000Z\",\n                \"image_url\": \"https://via.placeholder.com/640x480.png/00ee22?text=Tablets+dicta\",\n                \"pivot\": {\n                    \"order_id\": 10,\n                    \"product_id\": 3,\n                    \"quantity\": 3,\n                    \"price\": \"454.27\"\n                }\n            }\n        ]\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Get Authenticated User",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{token}}"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/user",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"api",
+								"user"
+							]
+						},
+						"description": "Get the authenticated user's information"
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8000"
+		},
+		{
+			"key": "token",
+			"value": "your_access_token_here"
+		}
+	]
+}
